@@ -92,6 +92,10 @@ export default class InfiniteScroll extends Component {
         useCapture: this.props.useCapture,
         passive: true
       };
+    } else {
+      options = {
+        passive: false
+      };
     }
     return options;
   }
